@@ -9,7 +9,8 @@
 }
 @font-face {
   font-family: Cyborg;
-  src: url("../public/AlienAi-mLxP5.ttf");
+  src: url("/AlienAi-mLxP5.ttf") format("truetype");
+  font-display: swap;
 }
 .font-cyborg {
   font-family: Cyborg;
