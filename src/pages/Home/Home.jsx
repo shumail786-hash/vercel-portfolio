@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
+import Header from "./components/Header";
 const Home = () => {
   return (
     <div>
       <Navbar />
       <div>
-        <h1>Shumail</h1>
+        <Header />
       </div>
     </div>
   );

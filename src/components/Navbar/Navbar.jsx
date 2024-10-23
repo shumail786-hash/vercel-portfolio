@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { MdClose } from "react-icons/md";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import { ImCross } from "react-icons/im";
 
 const Navbar = () => {
   const [navbarToggler, setNavbarToggler] = useState(false);
@@ -17,8 +17,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="sticky top-0">
-      <nav className="flex justify-between items-center bg-backgroundColor px-10 py-2">
+    <div className="sticky top-0 z-50">
+      <nav className="flex justify-between items-center bg-backgroundColor px-10 py-2 lg:px-14">
         <div className="relative h-10 w-10 bg-bodyColor rounded-lg">
           <p className="font-cyborg text-3xl text-backgroundColor text-center">
             S
@@ -40,8 +40,8 @@ const Navbar = () => {
           />
 
           {/* Close Icon */}
-          <MdClose
-            className={`absolute text-[1.85rem] cursor-pointer z-50 text-backgroundColor
+          <ImCross
+            className={`absolute text-2xl cursor-pointer z-50 text-backgroundColor
               ${
                 navbarToggler
                   ? "rotate-0 opacity-100 scale-100"
@@ -58,11 +58,11 @@ const Navbar = () => {
           ${
             navbarToggler && !isClosing
               ? "opacity-100 translate-y-0"
-              : "opacity-0 translate-y-full"
+              : "opacity-0 -translate-y-full"
           }`}
       >
         <div className="bg-[#1d1e20] row-span-4 flex justify-center items-center">
-          <ul className="flex flex-col items-end relative font-cyborg gap-y-4 top-3 text-backgroundColor text-xl">
+          <ul className="flex flex-col items-end relative font-cyborg gap-y-4 top-3 text-backgroundColor text-xl lg:text-3xl">
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
@@ -86,11 +86,11 @@ const Navbar = () => {
           href="https://github.com/shumail786-hash"
         >
           <div className="place-self-center flex items-center w-[75%] justify-center gap-x-10">
-            <div className="text-2xl text-end">
+            <div className="text-2xl text-end lg:text-3xl">
               <FaGithub />
             </div>
             <div>
-              <p className="font-cyborg text-2xl">Github</p>
+              <p className="font-cyborg text-2xl lg:text-3xl">Github</p>
             </div>
           </div>
         </a>
@@ -100,11 +100,11 @@ const Navbar = () => {
           href="https://www.linkedin.com/in/shumail-dev/"
         >
           <div className="place-self-center flex items-center w-[75%] justify-center gap-x-10">
-            <div className="text-3xl text-end">
+            <div className="text-3xl text-end lg:text-3xl">
               <FaLinkedin />
             </div>
             <div>
-              <p className="font-cyborg text-2xl">LinkedIn</p>
+              <p className="font-cyborg text-2xl lg:text-3xl">LinkedIn</p>
             </div>
           </div>
         </a>
