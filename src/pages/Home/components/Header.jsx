@@ -2,7 +2,7 @@ import React from "react";
 import ContentWrapper from "../../../components/ContentWrapper/ContentWrapper";
 const Header = () => {
   return (
-    <div className="h-[100vh] bg-bodyColor">
+    <div className="bg-bodyColor">
       <ContentWrapper>
         <p className="text-white">Shumail</p>
       </ContentWrapper>
