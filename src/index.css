@@ -9,10 +9,17 @@
 }
 @font-face {
   font-family: Cyborg;
-  src: url("/AlienAi-mLxP5.ttf") format("truetype");
+  src: url("/Cyborg.074aa61276a2a2f121a4.ttf") format("truetype");
   font-display: swap;
 }
 .font-cyborg {
   font-family: Cyborg;
-  letter-spacing: 1.4px;
+}
+@font-face {
+  font-family: "Exo Space";
+  src: url("/ExoSpace.606b1a1e5fed2c8afb24.ttf") format("truetype");
+  font-display: swap;
+}
+.font-exo {
+  font-family: "Exo Space";
 }

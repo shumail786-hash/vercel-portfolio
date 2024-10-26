@@ -3,7 +3,7 @@ import React from "react";
 const ContentWrapper = ({ children, className }) => {
   return (
     <div
-      className={`p-3 md:px-14 m-auto md:text-sm lg:text-xl xl:text-xl 2xl:text-2xl relative mx-w-[1240px] ${className}`}
+      className={`p-3 px-5 md:px-14 m-auto md:text-sm lg:text-xl xl:text-xl 2xl:text-2xl relative mx-w-[1240px] ${className}`}
     >
       {children}
     </div>

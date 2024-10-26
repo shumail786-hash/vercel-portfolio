@@ -67,7 +67,7 @@ const Navbar = () => {
           }`}
       >
         <div className="bg-[#1d1e20] row-span-4 flex justify-center items-center">
-          <ul className="flex flex-col items-end relative font-cyborg gap-y-4 top-3 text-backgroundColor text-2xl lg:text-3xl">
+          <ul className="flex flex-col items-end relative font-cyborg gap-y-2 top-3 text-backgroundColor text-[1.9rem] tracking-[1.1px]">
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
@@ -92,7 +92,9 @@ const Navbar = () => {
         >
           <div className="m-auto flex justify-center items-center gap-x-9">
             <FaGithub className="text-[1.9rem]" />
-            <p className="font-cyborg text-2xl lg:text-3xl">Github</p>
+            <p className="font-exo text-3xl font-bold tracking-[.1rem]">
+              GitHub
+            </p>
           </div>
         </a>
 
@@ -102,7 +104,9 @@ const Navbar = () => {
         >
           <div className="m-auto flex justify-center items-center gap-x-4">
             <FaLinkedin className="text-3xl" />
-            <p className="font-cyborg text-2xl lg:text-3xl">Linkedin</p>
+            <p className="font-exo text-3xl font-bold tracking-[.1rem]">
+              LinkedIn
+            </p>
           </div>
         </a>
       </div>
