@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <div>
+      <div className="bg-bodyColor">
         <Header />
       </div>
     </div>

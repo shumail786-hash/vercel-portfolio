@@ -21,9 +21,9 @@ const Navbar = () => {
     <div className="sticky top-0 z-50">
       <nav className=" bg-backgroundColor">
         <ContentWrapper className={"flex justify-between items-center"}>
-          <NavLink to={"/"}>
-            <div className="relative h-10 w-10 bg-bodyColor rounded-lg">
-              <p className="font-cyborg text-3xl text-backgroundColor text-center">
+          <NavLink to={"/"} className={"border-none outline-none"}>
+            <div className="h-10 w-10 bg-bodyColor rounded-md">
+              <p className="text-center text-backgroundColor text-3xl font-cyborg pt-[2.5px]">
                 S
               </p>
             </div>
@@ -67,15 +67,15 @@ const Navbar = () => {
           }`}
       >
         <div className="bg-[#1d1e20] row-span-4 flex justify-center items-center">
-          <ul className="flex flex-col items-end relative font-cyborg gap-y-2 top-3 text-backgroundColor text-[1.9rem] tracking-[1.1px]">
-            <li>
+          <ul className="flex flex-col items-end relative font-cyborg gap-y-1 top-3 text-backgroundColor text-[2.3rem] tracking-[1.1px]">
+            <li onClick={handleClose}>
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/projects">Projects</NavLink>
+              <NavLink to="/skills">Skills</NavLink>
             </li>
             <li>
-              <NavLink to="/skills">Skills</NavLink>
+              <NavLink to="/projects">Projects</NavLink>
             </li>
             <li>
               <NavLink to="/me">About Me</NavLink>
