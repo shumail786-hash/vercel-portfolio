@@ -33,9 +33,8 @@ const HomeLoader = ({ onAnimationComplete }) => {
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0 },
             }}
-            className="font-exo text-[15rem]"
+            className="font-exo text-[4rem] sm:text-[8rem] md:text-[12rem] xl:text-[15rem]"
             style={{
-              display: "inline-block",
               WebkitTextStroke: animationComplete ? "none" : "0.3vw #10e956", // Hide stroke after animation
               color: animationComplete ? "#10e956" : "transparent", // Set color after animation
             }}

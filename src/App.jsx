@@ -15,7 +15,6 @@ const App = () => {
   };
   return (
     <BrowserRouter>
-      {/* Show HomeLoader while loading is not complete */}
       {!loadingComplete ? (
         <HomeLoader onAnimationComplete={animateComplete} />
       ) : (
