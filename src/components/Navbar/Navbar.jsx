@@ -67,13 +67,16 @@ const Navbar = () => {
           }`}
       >
         <div className="bg-[#1d1e20] row-span-4 flex justify-center items-center">
-          <ul className="flex flex-col items-end relative font-cyborg gap-y-1 top-3 text-backgroundColor text-[2.3rem] tracking-[1.1px]">
+          <ul
+            className="flex flex-col items-end relative font-cyborg gap-y-1 top-3 text-backgroundColor 
+          text-[1.85rem] sm:text-[2.76rem] tracking-[.234rem]
+          "
+          >
             <li onClick={handleClose}>
               <a href="#home">Home</a>
             </li>
             <li onClick={handleClose}>
               <a href="#skills">Skills</a>
-              {/* <NavLink to="/skills">Skills</NavLink> */}
             </li>
             <li>
               <NavLink to="/projects">Projects</NavLink>
@@ -81,31 +84,31 @@ const Navbar = () => {
             <li>
               <NavLink to="/me">About Me</NavLink>
             </li>
-            <li>
-              <NavLink to="/contact">Contact Me</NavLink>
+            <li onClick={handleClose}>
+              <a href="#contact">Contact Me</a>
             </li>
           </ul>
         </div>
 
         <a
-          className="bg-[#424141] text-neutral-400 grid"
+          className="bg-[#424141] text-neutral-400 grid hover:bg-[#2d2c2c] duration-300"
           href="https://github.com/shumail786-hash"
         >
-          <div className="m-auto flex justify-center items-center gap-x-9">
-            <FaGithub className="text-[1.9rem]" />
-            <p className="font-exo text-3xl font-bold tracking-[.1rem]">
+          <div className="m-auto place-items-center flex justify-center items-center gap-x-9">
+            <FaGithub className="text-[1.85rem] sm:text-[3rem] tracking-[.234rem]" />
+            <p className="font-exo font-exo text-[1.85rem] sm:text-[3rem] tracking-[.234rem] font-bold">
               GitHub
             </p>
           </div>
         </a>
 
         <a
-          className="bg-[#0077b5] text-neutral-300 grid"
+          className="bg-[#0077b5] text-neutral-300 grid hover:bg-[#006da5] duration-300"
           href="https://www.linkedin.com/in/shumail-dev/"
         >
           <div className="m-auto flex justify-center items-center gap-x-4">
-            <FaLinkedin className="text-3xl" />
-            <p className="font-exo text-3xl font-bold tracking-[.1rem]">
+            <FaLinkedin className="text-[1.85rem] sm:text-[3rem] tracking-[.234rem]" />
+            <p className="font-exo text-[1.85rem] sm:text-[3rem] tracking-[.234rem] font-bold">
               LinkedIn
             </p>
           </div>

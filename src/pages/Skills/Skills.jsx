@@ -36,7 +36,8 @@ const Skills = () => {
     <div id="skills">
       <ContentWrapper>
         <div
-          className="bg-neutral-900 mx-auto border-b-2 border-t-2 rounded-xl border-backgroundColor w-fit px-5 md:py-6 md:px-10"
+          className="bg-neutral-900 mx-auto border rounded-xl border-backgroundColor w-fit px-5 md:py-6 md:px-10 
+          "
           style={{
             boxShadow: "0px 0px 10px #10e956",
           }}
@@ -44,9 +45,8 @@ const Skills = () => {
           <p
             className="text-[2.21rem] sm:text-[3rem] tracking-[.234rem] font-cyborg"
             style={{
-              color: "#10e956",
               textShadow:
-                "3px 3px 0 #000, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff",
+                "0px 0px 0 #10e956, -1px -1px 0 #10e956, 1px -1px 0 #10e956, -1px 1px 0 #10e956, 1px 1px 0 #10e956",
             }}
           >
             SKILLS

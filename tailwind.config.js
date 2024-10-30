@@ -12,6 +12,7 @@ export default {
       colors: {
         logoBgColor: "#3b82f6",
         backgroundColor: "#10e956",
+        secondaryColor: "#0c8a34",
         bodyColor: "#050810",
       },
     },
