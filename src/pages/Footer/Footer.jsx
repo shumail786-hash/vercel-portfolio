@@ -41,7 +41,7 @@ const Footer = () => {
       <div className="bg-secondaryColor">
         <a
           href="mailto:muhammadshumailmushtaq@gmail.com"
-          className="flex justify-center items-center font-cyborg text-center py-2 text-[1.45rem]
+          className="flex justify-center items-center font-cyborg text-center pt-1 text-[1.45rem]
           sm:text-[2rem] sm:tracking-[.234rem] uppercase text-neutral-200
           hover:bg-[#18742d] duration-300"
         >
@@ -61,7 +61,7 @@ const Footer = () => {
         >
           Muhammad Shumail Mushtaq
         </p>
-        <p className="text-backgroundColor pt-4 pb-6 font-light text-sm md:text-base">
+        <p className="text-backgroundColor pb-2 font-light text-sm md:text-base w-[90%] mx-auto">
           Built from scratch with{" "}
           <span className="animate-pulse text-3xl">💚.</span>{" "}
           <span className="font-exo">© </span>Copyright {year}. All Rights
