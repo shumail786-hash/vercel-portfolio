@@ -69,10 +69,11 @@ const Navbar = () => {
         <div className="bg-[#1d1e20] row-span-4 flex justify-center items-center">
           <ul className="flex flex-col items-end relative font-cyborg gap-y-1 top-3 text-backgroundColor text-[2.3rem] tracking-[1.1px]">
             <li onClick={handleClose}>
-              <NavLink to="/">Home</NavLink>
+              <a href="#home">Home</a>
             </li>
-            <li>
-              <NavLink to="/skills">Skills</NavLink>
+            <li onClick={handleClose}>
+              <a href="#skills">Skills</a>
+              {/* <NavLink to="/skills">Skills</NavLink> */}
             </li>
             <li>
               <NavLink to="/projects">Projects</NavLink>

@@ -22,8 +22,6 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/createProject" element={<Project />} />
-          {/* You can remove this route if you don't need it */}
-          <Route path="/shumail" element={<HomeLoader />} />
         </Routes>
       )}
     </BrowserRouter>
