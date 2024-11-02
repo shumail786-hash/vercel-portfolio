@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="pt-5" id="contact">
       <p
-        className="font-cyborg text-[2.21rem] sm:text-[3rem] tracking-[.234rem] text-center skew-y-6"
+        className="font-cyborg text-[2.21rem] sm:text-[3rem] tracking-[.234rem] text-center skew-y-[3.58deg]"
         style={{
           textShadow:
             "0px 0px 0 #10e956, -1px -1px 0 #10e956, 1px -1px 0 #10e956, -1px 1px 0 #10e956, 1px 1px 0 #10e956",
