@@ -78,8 +78,8 @@ const Navbar = () => {
             <li onClick={handleClose}>
               <a href="#skills">Skills</a>
             </li>
-            <li>
-              <NavLink to="/projects">Projects</NavLink>
+            <li onClick={handleClose}>
+              <a href="#projects">Projects</a>
             </li>
             <li>
               <NavLink to="/me">About Me</NavLink>
