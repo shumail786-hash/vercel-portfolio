@@ -68,7 +68,7 @@ const MyWork = () => {
                           className="text-sm bg-backgroundColor text-bodyColor rounded-md px-3 py-1 font-sans"
                           key={index}
                         >
-                          {elem.name + "," + " "}
+                          {elem.name}
                         </span>
                       ))}
                     </div>
