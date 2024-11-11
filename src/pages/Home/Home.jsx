@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Header from "./components/Header";
 import Skills from "../Skills/Skills";
 import Footer from "../Footer/Footer";
+import MyWork from "../MyWork/MyWork";
 const Home = () => {
   return (
     <div>
@@ -10,6 +11,7 @@ const Home = () => {
       <div className="bg-bodyColor">
         <Header />
         <Skills />
+        <MyWork />
         <Footer />
       </div>
     </div>

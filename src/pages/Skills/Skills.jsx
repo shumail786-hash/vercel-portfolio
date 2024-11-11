@@ -91,7 +91,7 @@ const Skills = () => {
           "
           variants={containerVariant}
           initial="hidden"
-          animate={"visible"}
+          animate={isInView ? "visible" : "hidden"}
         >
           {skills.map((skill, index) => (
             <motion.div
