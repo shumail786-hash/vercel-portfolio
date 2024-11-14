@@ -1,33 +1,40 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { getAllProjects } from "../../api/projects.api";
 import { CLOUDINARY_URL } from "../../utils/constant";
 import ContentWrapper from "../../components/ContentWrapper/ContentWrapper";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
 const MyWork = () => {
   const [projects, setProjects] = useState([]);
-  // usign ref
-  const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { threshold: 0.2 });
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const fetchAllProjects = async () => {
+      setLoading(true);
       try {
         const response = await getAllProjects();
-        setProjects(response.data.data);
+        setProjects(
+          response.data.data.sort((a, b) => b._id.localeCompare(a._id))
+        );
+        setLoading(false);
       } catch (error) {
+        setLoading(false);
         console.log(error.message);
+      } finally {
+        setLoading(false);
       }
     };
-    setTimeout(() => {
-      fetchAllProjects();
-    }, 1000);
+    fetchAllProjects();
   }, []);
 
   return (
     <div id="projects">
       <ContentWrapper>
-        <div
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: false, amount: 0.2 }}
           className="bg-zinc-950 mx-auto border rounded-xl border-backgroundColor w-fit px-5 md:py-6 md:px-10 hover:shadow-none hover:cursor-pointer hover:bg-neutral-900 duration-300"
           style={{ boxShadow: "0px 0px 10px #10e956" }}
         >
@@ -40,13 +47,30 @@ const MyWork = () => {
           >
             PROJECTS
           </p>
-        </div>
+        </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-x-2 gap-y-3 mt-10">
-          {projects &&
+        <div className="grid grid-cols-1 lg:grid-cols-2 justify-center gap-x-2 gap-y-3 mt-10">
+          {loading ? (
+            <p
+              className="font-cyborg w-full col-span-3 text-center text-[3rem] tracking-widest"
+              style={{
+                textShadow:
+                  "0px 0px 0 #10e956, -1px -1px 0 #10e956, 1px -1px 0 #10e956, -1px 1px 0 #10e956, 1px 1px 0 #10e956",
+              }}
+            >
+              Polishing My Genius...
+            </p>
+          ) : (
+            projects &&
             projects.map((project, index) => (
-              <span key={index}>
-                <div className="bg-neutral-900 py-3 px-3 rounded-md text-white">
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: false, amount: 0.2 }}
+              >
+                <div className="bg-neutral-900 py-3 px-3 rounded-md text-white ">
                   <div className="h-[15rem] sm:h-[30rem] w-full overflow-hidden rounded-md">
                     <img
                       src={`${CLOUDINARY_URL}/${project.projectThumbnail}`}
@@ -74,8 +98,9 @@ const MyWork = () => {
                     </div>
                   </div>
                 </div>
-              </span>
-            ))}
+              </motion.div>
+            ))
+          )}
         </div>
       </ContentWrapper>
     </div>
