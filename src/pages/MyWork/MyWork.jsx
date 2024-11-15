@@ -74,7 +74,7 @@ const MyWork = () => {
                   <div className="h-[15rem] sm:h-[30rem] w-full overflow-hidden rounded-md">
                     <img
                       src={`${CLOUDINARY_URL}/${project.projectThumbnail}`}
-                      alt="headerImage"
+                      alt={`${project.projectTitle}`}
                       className="hover:scale-125 duration-300 bg-center h-full w-full"
                     />
                   </div>

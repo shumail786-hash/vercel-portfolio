@@ -8,6 +8,44 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+/* Vertical Timeline Element Styling */
+.vertical-timeline-element-content {
+  padding: 0;
+}
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline--two-columns .vertical-timeline-element-content {
+    margin-left: 0;
+    padding: 0;
+    width: 44%;
+  }
+}
+.vertical-timeline-element-icon {
+  box-shadow: 0 0 0 5px #0c8a34, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+.vertical-timeline-dateStyle {
+  color: white;
+  padding-left: 10px !important;
+}
+
+@media screen and (min-width: 640px) {
+  .vertical-timeline-dateStyle {
+    padding-left: 18px !important;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .vertical-timeline-dateStyle {
+    padding-left: 28px !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .vertical-timeline-dateStyle {
+    padding-left: 31.5px !important;
+  }
+}
 @font-face {
   font-family: Cyborg;
   src: url("/Cyborg.074aa61276a2a2f121a4.ttf") format("truetype");

@@ -81,9 +81,10 @@ const Navbar = () => {
             <li onClick={handleClose}>
               <a href="#projects">Projects</a>
             </li>
-            <li>
-              <NavLink to="/me">About Me</NavLink>
+            <li onClick={handleClose}>
+              <a href="#about">About Me</a>
             </li>
+
             <li onClick={handleClose}>
               <a href="#contact">Contact Me</a>
             </li>
