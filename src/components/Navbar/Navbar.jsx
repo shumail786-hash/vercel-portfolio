@@ -59,7 +59,7 @@ const Navbar = () => {
       </nav>
 
       <div
-        className={`w-full top-0 absolute h-[100vh] grid grid-rows-6 transition-all duration-500 ease-in-out 
+        className={`w-full top-0 absolute h-screen grid grid-rows-6 transition-all duration-500 ease-in-out 
           ${
             navbarToggler && !isClosing
               ? "opacity-100 translate-y-0"
@@ -95,9 +95,9 @@ const Navbar = () => {
           className="bg-[#424141] text-neutral-400 grid hover:bg-[#2d2c2c] duration-300"
           href="https://github.com/shumail786-hash"
         >
-          <div className="m-auto place-items-center flex justify-center items-center gap-x-9">
+          <div className="m-auto flex justify-center items-center gap-x-9">
             <FaGithub className="text-[1.85rem] sm:text-[3rem] tracking-[.234rem]" />
-            <p className="font-exo font-exo text-[1.85rem] sm:text-[3rem] tracking-[.234rem] font-bold">
+            <p className="font-exo text-[1.85rem] sm:text-[3rem] tracking-[.234rem] font-bold">
               GitHub
             </p>
           </div>

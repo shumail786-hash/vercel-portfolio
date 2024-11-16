@@ -1,19 +1,30 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { TbMailFast } from "react-icons/tb";
+import { motion } from "framer-motion";
+
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <div className="pt-5" id="contact">
-      <p
-        className="font-cyborg text-[2.21rem] sm:text-[3rem] tracking-[.234rem] text-center skew-y-[3.58deg]"
+      <motion.p
+        className="font-cyborg text-[2.21rem] sm:text-[3rem] tracking-[.234rem] text-center"
         style={{
           textShadow:
             "0px 0px 0 #10e956, -1px -1px 0 #10e956, 1px -1px 0 #10e956, -1px 1px 0 #10e956, 1px 1px 0 #10e956",
         }}
+        animate={{
+          opacity: [1, 0.1, 1], // Animate opacity to blink
+        }}
+        transition={{
+          duration: 2, // Total duration of one blink cycle
+          repeat: Infinity,
+          repeatType: "loop",
+        }}
       >
-        Connect With Me
-      </p>
+        Connect With SHUMAIL
+      </motion.p>
+
       <div className="mt-8 grid grid-cols-1 text-white md:grid-cols-2">
         <a
           className="bg-[#424141] text-neutral-400 grid p-10 hover:bg-[#2d2c2c] duration-300"
@@ -21,7 +32,7 @@ const Footer = () => {
         >
           <div className="m-auto flex justify-center items-center gap-x-9">
             <FaGithub className=" text-[1.85rem] sm:text-[3rem] tracking-[.234rem]" />
-            <p className="font-exo  text-[1.85rem] sm:text-[3rem] tracking-[.234rem]">
+            <p className="font-exo text-[1.85rem] sm:text-[3rem] tracking-[.234rem]">
               GitHub
             </p>
           </div>
@@ -32,7 +43,7 @@ const Footer = () => {
         >
           <div className="m-auto flex justify-center items-center gap-x-4">
             <FaLinkedin className="text-[1.85rem] sm:text-[3rem] tracking-[.234rem]" />
-            <p className="font-exo text-[1.85rem] sm:text-[3rem] tracking-[.234rem] font-bold">
+            <p className="font-exo text-[1.85rem] sm:text-[3rem] tracking-[.234rem]">
               LinkedIn
             </p>
           </div>

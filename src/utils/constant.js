@@ -30,6 +30,6 @@ export const experienceData = [
     description:
       "I'm pursuing a BS Computer Science from Virtual University of Pakistan, where I've gained a strong foundation in computer science principles and practical development skills. This education complements my work experience, enabling me to contribute effectively to various projects. My academic journey at VU strengthens my technical expertise and prepares me for impactful roles in software development.",
     icon: React.createElement(FaGraduationCap),
-    date: "Oct, 2023",
+    date: "Oct, 2023 - Present",
   },
 ];

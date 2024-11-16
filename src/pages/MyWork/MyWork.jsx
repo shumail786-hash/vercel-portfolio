@@ -70,12 +70,13 @@ const MyWork = () => {
                 transition={{ duration: 0.5 }}
                 viewport={{ once: false, amount: 0.2 }}
               >
-                <div className="bg-neutral-900 py-3 px-3 rounded-md text-white ">
-                  <div className="h-[15rem] sm:h-[30rem] w-full overflow-hidden rounded-md">
+                <div className="bg-neutral-900 py-3 px-3 rounded-md text-white">
+                  <div className="aspect-[13/9] w-full overflow-hidden rounded-md">
                     <img
                       src={`${CLOUDINARY_URL}/${project.projectThumbnail}`}
                       alt={`${project.projectTitle}`}
                       className="hover:scale-125 duration-300 bg-center h-full w-full"
+                      loading="eager"
                     />
                   </div>
                   <div className="p-2">
