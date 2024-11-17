@@ -17,7 +17,11 @@ const Quotes = () => {
   }, []);
   return (
     <ContentWrapper className={"flex items-center justify-center"}>
-      <div
+      <motion.div
+        initial={{ scale: 0.4, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        viewport={{ once: false, amount: 0.5 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         className="w-full lg:w-3/4 xl:w-3/5 p-5 lg:p-10 border-b-4 border-r-4 rounded-lg border-secondaryColor"
         style={{
           backgroundImage:
@@ -25,14 +29,15 @@ const Quotes = () => {
           backgroundSize: "cover",
         }}
       >
-        <p className="text-start md:text-center leading-tight text-neutral-200 font-exo text-[1.89rem] lg:text-[2.5rem]  ">
+        <p className="text-start md:text-center leading-tight text-neutral-200 font-exo text-[1.89rem] lg:text-[2.5rem]">
           {'" ' + randomQuote.quote + ' "' + " -"}
           <span className="font-bold text-backgroundColor">
             {" "}
             {randomQuote.name}
           </span>
         </p>
-      </div>
+      </motion.div>
+      ;
     </ContentWrapper>
   );
 };

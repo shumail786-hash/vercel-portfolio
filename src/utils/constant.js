@@ -80,10 +80,6 @@ export const quotes = [
     quote: "Strive not to be a success, but rather to be of value.",
   },
   {
-    name: "Mahatma Gandhi",
-    quote: "Be the change that you wish to see in the world.",
-  },
-  {
     name: "Confucius",
     quote: "It does not matter how slowly you go as long as you do not stop.",
   },
