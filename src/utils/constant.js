@@ -33,3 +33,92 @@ export const experienceData = [
     date: "Oct, 2023 - Present",
   },
 ];
+
+export const quotes = [
+  {
+    name: "Prophet Muhammad (صلى الله عليه وآله وسلم)",
+    quote:
+      "The best of people are those that bring the most benefit to the rest of mankind.",
+  },
+
+  {
+    name: "Steve Jobs",
+    quote: "The only way to do great work is to love what you do.",
+  },
+  {
+    name: "Winston Churchill",
+    quote:
+      "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+  },
+  {
+    name: "Theodore Roosevelt",
+    quote: "Do what you can, with what you have, where you are.",
+  },
+  {
+    name: "Tim Notke",
+    quote: "Hard work beats talent when talent doesn’t work hard.",
+  },
+  {
+    name: "Nelson Mandela",
+    quote: "It always seems impossible until it’s done.",
+  },
+  {
+    name: "Sam Levenson",
+    quote: "Don't watch the clock; do what it does. Keep going.",
+  },
+  {
+    name: "Chris Grosser",
+    quote: "Opportunities don't happen. You create them.",
+  },
+  {
+    name: "Henry David Thoreau",
+    quote:
+      "Success usually comes to those who are too busy to be looking for it.",
+  },
+  {
+    name: "Albert Einstein",
+    quote: "Strive not to be a success, but rather to be of value.",
+  },
+  {
+    name: "Mahatma Gandhi",
+    quote: "Be the change that you wish to see in the world.",
+  },
+  {
+    name: "Confucius",
+    quote: "It does not matter how slowly you go as long as you do not stop.",
+  },
+  {
+    name: "Mark Twain",
+    quote: "The secret of getting ahead is getting started.",
+  },
+  {
+    name: "Thomas Edison",
+    quote:
+      "Genius is one percent inspiration and ninety-nine percent perspiration.",
+  },
+  {
+    name: "Vince Lombardi",
+    quote:
+      "Perfection is not attainable, but if we chase perfection, we can catch excellence.",
+  },
+  { name: "Imam Ali (AS)", quote: "Knowledge enlivens the soul." },
+  {
+    name: "Ibn Khaldun",
+    quote: "He who has a why to live can bear almost any how.",
+  },
+  {
+    name: "Al-Ghazali",
+    quote:
+      "Desires make slaves out of kings and patience makes kings out of slaves.",
+  },
+  {
+    name: "Jalal ad-Din Rumi",
+    quote:
+      "Don't be satisfied with stories, how things have gone with others. Unfold your own myth.",
+  },
+  {
+    name: "Eleanor Roosevelt",
+    quote:
+      "The future belongs to those who believe in the beauty of their dreams.",
+  },
+];

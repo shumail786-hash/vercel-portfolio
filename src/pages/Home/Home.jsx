@@ -5,6 +5,7 @@ import Skills from "../Skills/Skills";
 import Footer from "../Footer/Footer";
 import MyWork from "../MyWork/MyWork";
 import About from "../About/About";
+import Quotes from "../../components/Quotes/Quotes";
 const Home = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const Home = () => {
         <Skills />
         <MyWork />
         <About />
+        <Quotes />
         <Footer />
       </div>
     </div>

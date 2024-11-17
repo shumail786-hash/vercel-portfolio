@@ -7,7 +7,6 @@ const Header = () => {
   const sectionRef = useRef(null);
 
   const [startAnimation, setStartAnimation] = useState(false);
-
   useEffect(() => {
     setTimeout(() => {
       setStartAnimation(true);
@@ -32,14 +31,18 @@ const Header = () => {
     <div
       id="home"
       ref={sectionRef} // Attach the ref to track visibility
-      className="lg:h-[100vh] xl:h-[90vh] bg-center bg-no-repeat"
+      className={
+        startAnimation
+          ? "lg:h-[100vh] xl:h-[90vh] bg-center bg-no-repeat"
+          : "h-screen"
+      }
       style={{
         backgroundImage:
           "linear-gradient(to right bottom, rgba(5, 8, 16, .5), rgba(5, 8, 16, .5)), url(/headerImage.webp)",
         backgroundSize: "cover",
       }}
     >
-      <ContentWrapper className={"flex flex-wrap md:flex-nowrap"}>
+      <ContentWrapper className={"flex flex-wrap lg:flex-nowrap"}>
         {/* Left Content */}
         {startAnimation === true ? (
           <>
@@ -103,12 +106,7 @@ const Header = () => {
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
             >
-              <img
-                src="/workingImage.webp"
-                alt="Working"
-                loading="eager"
-                className="md:h-[60%] lg:h-auto"
-              />
+              <img src="/workingImage.webp" alt="Working" loading="eager" />
             </motion.div>
           </>
         ) : (
