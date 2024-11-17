@@ -6,20 +6,12 @@ const Header = () => {
   // References for sections
   const sectionRef = useRef(null);
 
-  const [isImageLoaded, setImageLoaded] = useState(false);
   const [startAnimation, setStartAnimation] = useState(false);
 
   useEffect(() => {
-    const img = new Image();
-    img.src = "/headerImage.webp";
-    img.onload = () => {
-      setTimeout(() => {
-        setImageLoaded(true);
-      }, 500);
-      setTimeout(() => {
-        setStartAnimation(true);
-      }, 1200);
-    };
+    setTimeout(() => {
+      setStartAnimation(true);
+    }, 100);
   }, []);
 
   // Hook to detect when the section is in view
@@ -42,11 +34,8 @@ const Header = () => {
       ref={sectionRef} // Attach the ref to track visibility
       className="lg:h-[100vh] xl:h-[90vh] bg-center bg-no-repeat"
       style={{
-        backgroundImage: isImageLoaded
-          ? "linear-gradient(to right bottom, rgba(5, 8, 16, .5), rgba(5, 8, 16, .5)), url(/headerImage.webp)"
-          : "linear-gradient(to right bottom, rgba(5, 8, 16, .5), rgba(5, 8, 16, .5))", // Fallback gradient while loading
-        // backgroundImage:
-        //   "linear-gradient(to right bottom, rgba(5, 8, 16, .5), rgba(5, 8, 16, .5)), url(/headerImage.webp)",
+        backgroundImage:
+          "linear-gradient(to right bottom, rgba(5, 8, 16, .5), rgba(5, 8, 16, .5)), url(/headerImage.webp)",
         backgroundSize: "cover",
       }}
     >
