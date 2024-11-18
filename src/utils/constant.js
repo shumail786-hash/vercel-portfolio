@@ -33,71 +33,16 @@ export const experienceData = [
     date: "Oct, 2023 - Present",
   },
 ];
-
 export const quotes = [
   {
     name: "Prophet Muhammad (صلى الله عليه وآله وسلم)",
     quote:
       "The best of people are those that bring the most benefit to the rest of mankind.",
   },
-
   {
-    name: "Steve Jobs",
-    quote: "The only way to do great work is to love what you do.",
+    name: "Imam Ali (AS)",
+    quote: "Knowledge enlivens the soul.",
   },
-  {
-    name: "Winston Churchill",
-    quote:
-      "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-  },
-  {
-    name: "Theodore Roosevelt",
-    quote: "Do what you can, with what you have, where you are.",
-  },
-  {
-    name: "Tim Notke",
-    quote: "Hard work beats talent when talent doesn’t work hard.",
-  },
-  {
-    name: "Nelson Mandela",
-    quote: "It always seems impossible until it’s done.",
-  },
-  {
-    name: "Sam Levenson",
-    quote: "Don't watch the clock; do what it does. Keep going.",
-  },
-  {
-    name: "Chris Grosser",
-    quote: "Opportunities don't happen. You create them.",
-  },
-  {
-    name: "Henry David Thoreau",
-    quote:
-      "Success usually comes to those who are too busy to be looking for it.",
-  },
-  {
-    name: "Albert Einstein",
-    quote: "Strive not to be a success, but rather to be of value.",
-  },
-  {
-    name: "Confucius",
-    quote: "It does not matter how slowly you go as long as you do not stop.",
-  },
-  {
-    name: "Mark Twain",
-    quote: "The secret of getting ahead is getting started.",
-  },
-  {
-    name: "Thomas Edison",
-    quote:
-      "Genius is one percent inspiration and ninety-nine percent perspiration.",
-  },
-  {
-    name: "Vince Lombardi",
-    quote:
-      "Perfection is not attainable, but if we chase perfection, we can catch excellence.",
-  },
-  { name: "Imam Ali (AS)", quote: "Knowledge enlivens the soul." },
   {
     name: "Ibn Khaldun",
     quote: "He who has a why to live can bear almost any how.",
@@ -113,8 +58,74 @@ export const quotes = [
       "Don't be satisfied with stories, how things have gone with others. Unfold your own myth.",
   },
   {
-    name: "Eleanor Roosevelt",
+    name: "Avicenna (Ibn Sina)",
     quote:
-      "The future belongs to those who believe in the beauty of their dreams.",
+      "The world is divided into men who have wit and no religion and men who have religion and no wit.",
+  },
+  {
+    name: "Al-Farabi",
+    quote:
+      "A good citizen must not only know how to live in harmony, but also how to create harmony.",
+  },
+  {
+    name: "Al-Biruni",
+    quote:
+      "The job of the scientist is to explore the unknown and understand the world, regardless of religion or culture.",
+  },
+  {
+    name: "Ibn Rushd (Averroes)",
+    quote:
+      "Ignorance leads to fear, fear leads to hate, and hate leads to violence. This is the equation.",
+  },
+  {
+    name: "Omar Khayyam",
+    quote: "Be happy for this moment. This moment is your life.",
+  },
+  {
+    name: "Al-Razi (Rhazes)",
+    quote:
+      "When the soul is ill, the body suffers; when the body is ill, the soul suffers.",
+  },
+  {
+    name: "Ibn Arabi",
+    quote: "The divine reality is one, but its manifestations are many.",
+  },
+  {
+    name: "Al-Kindi",
+    quote:
+      "We ought not to be ashamed of appreciating the truth and to acquire it wherever it comes from.",
+  },
+  {
+    name: "Ibn Battuta",
+    quote:
+      "Traveling leaves you speechless, then turns you into a storyteller.",
+  },
+  {
+    name: "Ibn Tufail",
+    quote:
+      "Philosophy is a quest for wisdom in life, connecting the mind with divine knowledge.",
+  },
+  {
+    name: "Nasir al-Din al-Tusi",
+    quote:
+      "Anyone who seeks perfection and strives for virtue is engaged in worship.",
+  },
+  {
+    name: "Al-Khwarizmi",
+    quote:
+      "The foundation of all knowledge begins with mathematics and calculation.",
+  },
+  {
+    name: "Al-Jahiz",
+    quote: "Books are the gardens of the learned.",
+  },
+  {
+    name: "Al-Hasan Ibn al-Haytham",
+    quote: "The duty of man is to seek truth in everything around him.",
+  },
+  {
+    name: "Al-Mawardi",
+    quote:
+      "Leadership is not about domination but about serving with wisdom and justice.",
   },
 ];

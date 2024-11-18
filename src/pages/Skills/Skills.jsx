@@ -26,7 +26,7 @@ const skills = [
   { name: "Netlify", icon: SiNetlify },
   { name: "Vercel", icon: SiVercel },
   { name: "TailwindCss", icon: SiTailwindcss },
-  { name: "BootStrap", icon: SiBootstrap },
+  { name: "BootStrap 5", icon: SiBootstrap },
   { name: "HTML5", icon: SiHtml5 },
   { name: "Css3", icon: SiCss3 },
 ];
@@ -40,7 +40,7 @@ const Skills = () => {
           className="bg-zinc-950 mx-auto border rounded-xl border-backgroundColor w-fit px-5 md:py-6 md:px-10 hover:shadow-none hover:cursor-pointer hover:bg-neutral-900 duration-300"
           style={{ boxShadow: "0px 0px 10px #10e956" }}
           whileInView={{
-            rotate: [0, -30.6, 30.6, 0],
+            rotate: [0, -15.6, 15.6, 0],
             scale: [0.9, 1],
           }}
           transition={{
@@ -63,12 +63,12 @@ const Skills = () => {
         <motion.div
           className="
             text-white bg-[#0c8c34] grid grid-cols-2 
-            md:grid-cols-3 lg:grid-cols-4 p-4 md:p-6 xl:p-8 my-8
+            md:grid-cols-3 lg:grid-cols-4 p-4 md:p-6 xl:p-8 mt-16 mb-7 
             sm:w-[80%] lg:w-[70%] sm:mx-auto rounded-3xl
           "
           whileInView={{
-            rotate: [0, 20.6, -20.6, 0],
-            scale: [0.5, 1],
+            rotate: [0, 5.6, -5.6, 0],
+            scale: [0.9, 1],
           }}
           transition={{
             duration: 1, // Total duration of the animation
