@@ -9,7 +9,6 @@ const Quotes = () => {
   useEffect(() => {
     const renderRandomQuote = () => {
       const randomIndex = Math.floor(Math.random() * quotes.length);
-      console.log(randomIndex);
       setRandomQuote(quotes[randomIndex]);
     };
 

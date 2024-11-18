@@ -9,6 +9,39 @@
   scroll-behavior: smooth;
 }
 
+/* Custom Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Selection Color Change  */
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #10e956;
+}
+
+::selection {
+  color: white;
+  background: #10e956;
+}
+
 /* Vertical Timeline Element Styling */
 .vertical-timeline-element-content {
   padding: 0;
@@ -46,6 +79,8 @@
     padding-left: 31.5px !important;
   }
 }
+
+/* Font Families Importing */
 @font-face {
   font-family: Cyborg;
   src: url("/Cyborg.074aa61276a2a2f121a4.ttf") format("truetype");
