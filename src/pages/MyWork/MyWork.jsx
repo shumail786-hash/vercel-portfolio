@@ -3,6 +3,7 @@ import { getAllProjects } from "../../api/projects.api";
 import { CLOUDINARY_URL } from "../../utils/constant";
 import ContentWrapper from "../../components/ContentWrapper/ContentWrapper";
 import { motion } from "framer-motion";
+import { SiGithub, SiVivawallet } from "react-icons/si";
 
 const MyWork = () => {
   const [projects, setProjects] = useState([]);
@@ -74,7 +75,7 @@ const MyWork = () => {
                     <img
                       src={`${CLOUDINARY_URL}/${project.projectThumbnail}`}
                       alt={`${project.projectTitle}`}
-                      className="hover:scale-125 duration-300 bg-center h-full w-full aspect-[10/10] lg:aspect-[13/9]"
+                      className="duration-500 bg-center h-full w-full aspect-[10/9] lg:aspect-[13/9]"
                       loading="eager"
                     />
                   </div>
@@ -94,6 +95,60 @@ const MyWork = () => {
                           {elem.name}
                         </span>
                       ))}
+                    </div>
+                    <div className="flex gap-x-3 text-lg gap-y-2 py-2 flex-wrap">
+                      {project.github ? (
+                        <motion.div
+                          className="h-8 w-8 rounded-full bg-stone-700 flex items-center justify-center cursor-pointer"
+                          whileInView={{ scale: [0.8, 1] }}
+                          whileHover={{ scale: [1, 0.8] }}
+                          transition={{
+                            duration: 0.5,
+                            ease: "easeInOut",
+                          }}
+                        >
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <SiGithub />
+                          </a>
+                        </motion.div>
+                      ) : (
+                        ""
+                      )}
+                      {project.view ? (
+                        <motion.div
+                          className="h-8 w-8 rounded-full bg-gray-700 flex items-center justify-center cursor-pointer"
+                          whileInView={{ scale: [0.8, 1] }}
+                          whileHover={{ scale: [1, 0.8] }}
+                          transition={{
+                            duration: 0.5,
+                            ease: "easeInOut",
+                          }}
+                        >
+                          <a
+                            href={project.view}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <svg
+                              stroke="currentColor"
+                              fill="currentColor"
+                              stroke-width="0"
+                              viewBox="0 0 1024 1024"
+                              height="1em"
+                              width="1em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M396 512a112 112 0 1 0 224 0 112 112 0 1 0-224 0zm546.2-25.8C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 0 0 0 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM508 688c-97.2 0-176-78.8-176-176s78.8-176 176-176 176 78.8 176 176-78.8 176-176 176z"></path>
+                            </svg>
+                          </a>
+                        </motion.div>
+                      ) : (
+                        ""
+                      )}
                     </div>
                   </div>
                 </div>
